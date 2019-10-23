@@ -1,0 +1,16 @@
+<html>
+<head><title>Country + State</title></head>
+
+<script type="text/javascript" src="data.json"></script>
+<script type="text/javascript" src="countrystate.js"></script>
+<body>
+
+<label>Country: <select name="billingCountry" id="country" onchange="populateState(this);"></select></label></br>
+<label>State/Province: <select name="billingState" id="state"></select></label>
+
+<script type="text/javascript">
+	window.onload = initCountries();
+</script>
+
+</body>
+</html>
